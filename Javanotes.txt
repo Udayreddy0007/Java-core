@@ -1,0 +1,713 @@
+                                    Java Core/Fundamentals
+------ Date -25/07/26
+What is java - Object oriented language (OOPs)
+      in java everything is treated as object
+1.	it is a platform independent- it doesn't rely on platform
+2.	it is a readable language- when someone looks into the code he can easy understand we use a simple english
+3.	Policy WORE- Write the code once and run it everywhere only if the system as jvm
+
+ what is an object --
+                 object is an instance of a class
+  What is class -- 
+                 blueprint/design 
+Analogy on class and object -  Car
+ To built a car we need a design / blueprint it just a  design not a real car - Class
+                               Object --Real car (Instance of class)
+How Java Work --
+                                     Person -- he needs an editor to write their java code (Vs code) readable code which is written in English- Vs code editor is lightweight
+                                                          |
+    (JVM) java virtual machine   Complier - it complies the code before generating the output
+                                                         |
+   JRE(Java runtime env) Bytecode - system will only understand the data  which is in numeric format ( code is converted into unique number hello-1023,101010)
+                                                        |                                                       
+    Output - display our output/terminal or cmd (Ex: Hello)
+   We have an editor (Vs code)
+•	To write our java code
+•	We are using VS code because it is light weight
+    We have to Install JDK suite/Development Tool Kit
+which contains JVM and JRM
+JVM-Executes Java bytecode on your machine
+JRE-Runs Java programs - includes JVM
+Verification
+•	Open cmd verify once jdk is installed 
+•	With this commands
+1.	To check the version        java --version (you get the version(Like this Java 21.0.3 some other things as well)
+2.	Next after getting the version check weather the complier is installed or not by using this command javac --version
+
+
+-------Date:27/08/26
+
+
+First java file  creation or first java  program
+  Created a folder
+             create a file should be stored with an .java extension if not stored with .java extension then we cannot run the file
+
+Syntax:   
+       public class classname() ----java program live inside this class
+      {
+      public static void main(String[] args)  - java actually start from here like front door
+                                       {
+                                            System.out.println(‘value’); - printing statement / to diplay the value
+                                     }
+        }
+
+•	Class name and file should match
+•	After writing the code we have to compile the code then we have to run the code
+commend to compile and run the code 
+javac helloworld.java  -- javac filename.java
+java helloworld  ----         java filename
+
+
+Data type -- 
+
+What Is a data – it  specifies the size and type of the data
+  in java we have two different data types 1. Primitive 2.Non-primitive
+                                                            Data Types
+ -->  1.Primitive data type :                                                                         
+       Are the types they are in built data type  we have 8 types
+       Fixed size , store values , faster than non – primitive, cannot be null , Starts with lower case     
+      •Byte - whole number smaller – byte size is 1 bytes
+      Ex:  byte age = 25;
+      •	Short – whole number – byte size is 2 bytes
+      Ex: short marks =100;
+      •	long – Bigger whole number and it must end with L – byte size 8 bytes
+      Ex: long population = 1400000L
+      •	int – it stores integers and numbers – byte size 4 bytes
+      Ex: int age = 18;
+      •	double – double precision it also stores number approximately varies from 15 to 16 it as high accuracy to over take float we use Double – byte size 8 bytes
+      Ex: double percentage = 78.99;
+      •	float – Single precision it also stores the number and the range varies from 6 to 7 it as less accuracy and it should end with F otherwise by default the java program will consider it as double byte size -4 bytes
+      Ex: float price = 98.1F;
+      •	char – represents a single alphabet it must represented in between single (‘’
+      ) or double quotes(””) -byte size 2 bytes
+      Ex: char grade = ‘A’;
+      •	boolean – true/false – byte size 1 bit
+      Ex: Boolean isPassed = True;    
+
+------Date: 31/09/26
+
+--> 2.Non-Primitive Datatypes: Reference data type
+
+     1.	Array : stores a list of values / An array is a collection of multiple values of the same type, stored together under one name.
+                ex: Cities[] ={Hyderabad,Mumbai,Delhi}
+     2.	Class :Blueprint/Template we used to create an object  we will define the variables and methods
+              
+               ex: 	class studentData
+               
+                  {
+                       String  Name();
+                       String   rollno();
+                       String  subject();
+                        Char section();
+
+                     }
+      3.Object : Instance of the class / An object is a real instance of a class.We create an object using the new keyword
+      4.Interfaces : An interface in Java is a blueprint that defines a contract for classes.It is mainly used to achieve abstraction and multiple inheritance in Java.
+      5.String : A sequence of characters  , numbers  string should be declared inside a ‘ ,’  / “,”
+                  ex:  idcardno: ‘21M91A0511’;
+                   Name = revanth123 / “Revanth123”  
+           Syntax:
+                    Datatype name variable name = value;
+           String studentName = “Ravi”;
+          
+           Ex:   
+                Int id = 1234;
+                String name = “uday”;
+               System.out.println(name);
+
+
+--> 3.Variables:-Variable is a  container that stores the data
+
+Variable naming Rules:
+•	A Variable name may start with $ or  _  
+•	A Variable name cannot starts with a number
+•	A variable name may starts with letters 
+•	A variable name cannot be a default names  / predefined names  ex: for, count , if
+•	A variable shouldn’t contain spaces.
+Note: Below doesn’t belongs to rules
+•	Java is case sensitive language it treats  different age and Age
+•	Ex: int age = 25;
+•	System.out.println(Age); --- age and Age both are different
+•	Java follows  a CamelCase Naming convention
+stdId , className studentMarks
+ 
+Variable type:
+•	Instance Variable -  belongs to an object, declared in the class
+•	Local Variable - shared by all objects, belongs to the class declared inside a method
+•	Static Variable - only exists inside this method
+
+final key word 
+
+  we use this key word to display the constant 
+  PI = 3.14
+  MAX_SPEED  = 120;
+  Java while declaring the variable names we follow camelcase convention but if your use final key word to declare any constant value We
+  have decalre them in Uppercase (PI)
+
+  NOTE: While display any datatype with constant values
+  final Datatypename = value;
+     final double PI = 3.14
+     final int MAX_SPEED = 120;
+
+
+ --->Operators -- we use operators mostly while decalring the value, writing any conditions and to perform calculations
+
+ --Arithmetic Operators - for math calculations  -- + , - , * , % , / 
+ --Assignment Operators / compound assignmentr - assigning the values its combine with arithmmetic 
+         += ,-=, *=,/= , ++(increment  +1) , -- (subtracting the -1)
+ --Relational or comparision -- ==(comparing the two values)  , <= ,>= ,< , > ,!=(not equally to)
+ --Logical Operators -- three types they are
+     && (AND)  -  if two conditions are true then only statement is true 
+      ex:   A = 18; , B=20 ;   
+          (A&&B) - true otherwise i will get a false 
+
+    -- ||(OR) - any one condition must be true 
+           A=18; B=20;
+           (A||B) -- True
+
+      !(NOt)    - Reverse 
+
+  -- Date - 08/09/26 
+
+
+  --> Control statements / Conditional statements :   The program let you make the conditions , 
+                                                      So the program that will be executed when it is satisified / True
+                     
+
+      
+       -- if  : the code is executed until unless it is True
+            
+            syntax : 
+                       if(condition) --- if the condition is true
+                        {
+                                           // statement is excecuted
+                       }
+
+            ex:
+                    int age = 18;
+                    if(age >= 18){
+                          System.out.println("He/she is eligible for vote");
+                    }
+                           
+               
+       -- if else :  the code is excecuted when the condition is true it will print true statement and when it is false it prints a false statement
+               
+               syntax:  
+                                if(condition){
+                                                  // true statements(true block)
+                                       
+                                              }
+                                              else{
+                                                    // false statement (false block)
+                                              }
+
+            ex:
+                  
+                    int age = 18;
+                    if(age >= 18){
+                          System.out.println("He/she is eligible for vote");
+                    }
+                    else{
+                         System.out.println("Conditions not met");
+                    }
+                 
+               
+       -- else if / nested else if : the code that will be exectued when the condition true
+
+         if()
+              {
+
+          }
+         else if(){
+                        
+         }else if(){
+
+         }
+         else{
+             // default statement
+         }
+
+
+         example:
+
+
+         int age = 18;
+            if(age > 18){
+                          System.out.println("He/she is eligible for vote");
+                    }else if(age >= 16){
+                        System.out.println("conditions are met");
+                    }else{
+                    System.out.println("no conditions are matching");
+                    }
+
+
+                
+-- Date : 10/9/26
+       -- Switch    :  
+                     it is structured way of writing the Conditions
+
+                     syntax:
+                           
+                             switch(varaible name/ expression)
+                             {
+                                 case 1:
+                                       break; -- tell the code to execute the case1
+                                 case 2:
+                                      break ;
+
+                               default:
+                                        
+                             }
+                             System.out.println()
+
+
+
+
+        ex:
+
+
+                    public class Controlstmts{
+                    public static void main(String[] args){
+                    int num  = 1;
+                      String msg;
+                      switch(num)
+                      {
+                        case 1:
+                              msg ="user chosen  value is 1";
+                         
+                        case 2:
+                              msg="user chosen value is 2";
+                              break;
+                             
+                        
+                            default:
+                              msg="user hasn't chosen any value";
+                      }
+                      System.out.println("the correct value chosen by the user is :" + msg);
+                    }
+                }
+
+
+
+--> Looping control statements / iterative control statements :
+                     
+     --  it will iterate the block of code multiple times until the condition is true
+
+     ex:
+            String name = "ravi";
+                System.out.println(name);
+                System.out.println(name);
+                System.out.println(name);
+                System.out.println(name);
+                System.out.println(name);
+                System.out.println(name);
+ 1. for Loop :
+           
+               I knows how many to run the code
+
+    syntax ;
+                for(i=0; i<=5; i++ /--) (- i=0; intialization i<= stoping condition   , i++ is increment)
+                {
+                       // output statement
+                }
+     
+
+
+ 2. while Loop  : it will exectue the code and then it increments
+           syntax:
+                    int i = 0;
+                     while(i<=5){
+                        //output satement 
+                        i++;
+                     }
+ 3. do While   : code is execute once and the condition checked at last
+     syntax:
+
+           do{
+             // output statements
+                 i++;
+           }while(i<=10);
+
+            
+ 4 . for each inside array / enhanced for Loop
+
+ --> break and continue --
+  break means  that breaks the statements immediately when the condition true:
+  for(i = 1 ; i<=9; i++){
+    if(i == 5){
+        break; // 1 , 2, 3, 4 , 6 ,   }
+    system.out.println("the numbers are"+i)
+  }
+
+
+
+--> Date : 12/09/26
+    
+       -->  Array -- A collection  of same value/ same data
+                          [] -- an array
+            ex :  i want to prints 5 scores - 90 , 80 , 70 , 60 , 50 // General way of printing the each value
+             int  a = 90;|
+             System.out.println(a) ;
+             int b = 80;
+              System.out.println(b) ;
+             int c = 70;
+              System.out.println(c) ;
+             int d  = 60;
+              System.out.println(d) ;
+             int e = 50;
+              System.out.println(e) ;
+        
+       --> int[]   scores = {90,80,70,60,50};
+      -->  Datatype[] variablename = {insert the values};
+       
+        -- index - specifies the position of the value - 0 , 1, 2,3,4,......
+         System.out.println(scores[1]) ;
+         System.out.println(scores.length) // 5
+    
+    --> String[] cities = {"Hyderabad","Delhi","Mumbai","Gujarat","Ap"};
+                System.out.println(cities.length) // 5
+                System.out.println(cities[2]);
+
+--> For Each
+
+        syntax : 
+
+              for(Datatype variablename:variablenames)  {
+                    System.out.println(variablename);
+              } 
+          ex :
+                 
+                  for( int score:scores){
+                    System.out.println(score);
+                  }
+
+--> Date : 15/09/26
+
+            --> STRING: Is a collection of characters and it is declared in ("")
+            ---> in Java pogramming lang many-built in methods -- to perform operations
+                such as finding the length , change the case (lower case/Upper case, extaracting the characters and replacing text)
+              
+                1.length() : Returns the no of characters persent in a string
+                             String name = "Shasha";
+                             System.out.println(name.length);
+              
+                2.toUpperCase(): Converts the entire string into upper case
+                      ex: 
+                            String stdName = "Hello welcome to Java";
+                            System.out.println(stdName.toUpperCase());
+             
+              3.toLowerCase(): converts the entire string into the lower case
+                    ex:
+                                String stdName = "Hello welcome to Java";
+                                System.out.println(stdName.toLowerCase());
+            
+             4.charAt() : to find the particular character index / to find the position
+                         ex: 
+                                  String stdName = "Hello welcome to Java";
+                                System.out.println(stdName.charAt(5));
+           
+            5.equals() :  compare two strings based up on their content
+                        ex:  
+                             String a  = "Ravi";
+                             String b = "ravi";
+                             Systems.out.println(a.equals(b)); // boolean output(true/false)
+            
+            6.equalsIgnoreCase() : It will ignore the cases and compare the two strings
+
+                   ex:      String a  = "Ravi";
+                             String b = "ravi";
+                             Systems.out.println(a.equasIgnoreCase(b));
+           
+            7.contains() : it will check whether the string is present or not
+
+                ex : 
+                               String msg = "Hey team how are y'all";
+                               System.out.println(msg.contains("all"));
+
+
+
+
+---> Class : it is a Blueprint / structure to create a real Instance
+
+     ex  :  How a car is built ?
+
+                 --Based  on design/ imagination / blue print
+                 --what a design contains 
+                   -- specifications 
+                   -- logo / company 
+                   -- properties / features  -- class properties
+                        name : 
+                        color:
+                        size:
+
+                        Syntax :
+                                  class classname{
+                                    properties of the class ;
+                                  }
+
+---> Object : 
+             real instance of the Class
+            the things which we can see in the real world / output
+
+         Syntax:
+            classname objname = new classname(arguments);
+
+
+---> methods : 
+                  does something / perform some actions 
+
+  --> returntype() -- does something to value and give something
+     
+     syntax: dataType nameofmethod (){
+            returntype;
+     }
+  
+  --->void() -- does something but doesn't Returns anythings
+             static void nameofmethod(){
+
+             }
+
+--->Date : 19/9/26
+
+ --- Constructor : A constructor is a special block of code in a class and it is automatically excecuted
+                   when object is Created
+
+      --- like a intial setup 
+      
+      -- ex : When a customer book a car 
+                information / intial setup
+                brand 
+                color
+                speed
+
+ --- in constructor we use this keyword -- referes to current object
+
+   class car {
+      String name;
+      String color;
+
+      // Constructor
+      car (){
+            name ="BMW";
+            color="Black";
+
+      }
+      public static void main(String[] args){
+            // object creation
+            car c1 = new car();|
+            System.out.println(c1.name);
+            System.out.println(c1.color);
+
+      }
+   } 
+
+
+   --Rules of using constructor 
+   1. Constructor name must be same as the class name
+   2.Constructor doesnot have any return types
+   3.Constructor is called automatically when an object is created
+
+   --> Parameterizd Constructor
+      Class{
+            String name
+      }
+       
+       constructor name(String name){
+               this.name = name;
+       }
+
+--> Polymorphism -- one name , many forms , multiple behaviour  --
+    
+        int add(int a , int b){
+            return a+b;
+        }
+        int add(int a, int b, int c){
+            return a+b+c;
+        }
+
+    --- So the java allows the same method name to behave differently
+    --- there are twos of polymorphism 
+    --Compile - time polymorphism  Overloading-- same method name and different parameters ex : add(int a, int b) , add (int a , int b .  int c)
+    -- Runtime Polymorphism- Overriding -- Inheritance
+
+    --> Date : 24/9/26
+
+     --- inheritance : Parent properties and methods inheritance child Class
+
+     Syntax :
+                 Class car {  // parent class car
+                  
+                  void start(){
+                        System.out.println("The car has started");
+                  }
+                 }
+                 Class BMW extend car  // extend is allow the child to inhert the properties and methods // sub class
+                 {
+ 
+                           // override 
+                       void start(){
+                        System.out.println("Bmw has started");
+                       }
+                 }
+                 Class Benz extend car // sub class of parent class Car{
+
+                  void start(){
+                        System.out.println("Benz has started");
+                  }
+                 }
+                 public static void main(String[] args){
+          
+                   car c = new BMW();
+                   car c1 = new Benz();
+                   c.start();
+                   c1.start();
+
+
+                 }
+
+--- Vechile - parent 
+    
+
+
+----> Date : 26/9/26
+
+     --> Encapsulation in JAVA -- binding the data , wrapping the data and acting on the data in a single unit
+
+     variable  , methods and class  -- mainly used to protect the Data
+            
+      private data -- which accessed with the only class
+
+      gettter , setter - getValue() , setValue(); -- read , update
+
+      ex : car -- external things -- open door - public data 
+
+---> date : 29/9/26
+
+ 
+ --> Encapsulation done 
+
+
+ ---> abstraction - hiding the implementation details and showing only the essential details
+
+ ex : you press accelerator without needing  to know the engine internally works
+
+
+    ---> Date: 3/10/26 
+
+--> Abstraction ex :  when we drive  a car you start , accelerator, brake , and streering , you dont need to know the internal engine 
+
+        transmission mechanism
+
+        --> Abstraction can be achieved through abstraction class , methods, interfaceses
+
+
+--> Abstraction class : 
+                        A abstract class  can be defined by using an abstract keyword it consists of 
+                          abstract methods as well as normal methods
+
+
+syntax : abstract class classname    // abstract class
+                     {
+                     
+      abstract void method name(); // abstract method // method contains only decalration it doesnt contains any implementations
+
+      void method name()          // Normal method
+      {
+
+      }
+
+
+        }
+
+--> Important rules : 
+      
+       -- you cannot create an object directly from an abstraction class 
+       --  A child class can implement inherited abstract methods unless the child is alo abstract
+       -- An abstract class can contain normal methods , variables  and constructors .
+       -- Abstartct calss is taken as reference while creating an object for child class
+
+
+---> Interfaces : A interface is a contract/buleprint it defines that what a class must do
+
+ 
+ ex : Company  says there employee must login() and logout()
+
+  --- it says what you to do but doesnt tells you exactky how you must do it
+
+  syntax : 
+              interface class name {
+                  void method1;
+                  void  method2;
+              }
+
+
+-- when you want to execute multiple methods of classes use Mutiple interfaces
+
+
+
+---> Multiple interfaceses
+
+ -- Syntax : 
+               
+               interface classname {
+                  method1();
+                  method2();
+               }
+               interface classname2{
+                  method3();
+                  method4();
+               }
+               class childclassname implements classname,classname2{
+                  public void method1(){
+
+                  }
+                   public void method2(){
+                        
+                  }
+                   public void method3(){
+                        
+                  }
+                   public void method4(){
+                        
+                  }
+               }
+
+
+                         
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+         
+          
+
+
+
+
+                                   
+                         
+
+
+
+                 
+
+
