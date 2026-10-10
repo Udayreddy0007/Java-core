@@ -1,3 +1,4 @@
+package foundation;
 public class Controlstmts{
     public static void main(String[] args){
         int num  = 1;

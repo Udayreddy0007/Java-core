@@ -1,3 +1,4 @@
+package foundation;
 public class Loooping {
     public static void main(String[] args){   
     //for(int i=1; i<=10; i++){       // i =0 -- 0<=5 -- 0 i++ -- i + 1 = 0 +1 = 1 -- 2 -- 2<=5, 2+1 = 3

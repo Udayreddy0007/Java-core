@@ -1,3 +1,4 @@
+package foundation;
 public class variables {
     public static void main(String[] args) {
         // printing the constant values using final key word

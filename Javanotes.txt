@@ -673,6 +673,99 @@ syntax : abstract class classname    // abstract class
                }
 
 
+      
+--> Date  : 10/10/26
+
+
+     ---> Inner class / non- static inner class : 
+                      A class declared inside another class is called an inner / nested Class
+
+       class a {
+            class b {
+                  class c
+            }
+       }
+
+       syntax : 
+               while creating an object for inner class 
+
+               Class1Name  objectName = new Class1Name();
+               Class1Name . class2Name objectname2 = objectname1.new class2Name();
+
+
+       ex : A real car has a engine 
+             we create a car class then we declared a engine class inside the Car
+
+
+
+---> Static inner class / Static Nested Class
+
+       --> the difference is outer class object is not required
+
+       Syntax : 
+                       class a {
+                           static class b {
+                              void method(){
+                                    //output statement
+                              }
+                           }
+                       }
+
+                       a.b oject name = new a().b();
+                         objectname.method();
+       
+
+
+
+ 
+
+ ---> Type casting  / converstion
+
+    
+       ---> byte, short , int , long , float , double  , char  , Boolean
+
+
+       --->expicitly(narrowing) -- Typecasting 
+       ---> implicitly (widening) -- Type converstion
+
+
+
+----> Wrapper classes : 
+                 
+      Already know the primitive data types 
+
+      int     - Integer --> mst commonly used
+      double  - Double --> mst commonly used
+      char    - Character --> mst commonly used
+      boolean - Boolean --> mst commonly used
+      long    - Long
+      short   - Short
+      byte    - Byte
+      float   - Float
+
+
+  ex: int age = 18;
+
+    Sometime Java API requires object for this data types 
+
+
+    ---> Boxing  , Auto-boxing , unboxing  , Auto-unboxing
+
+
+
+
+
+
+    -----> Package 
+      
+       ---> we know folder consists some files 
+             inside the folder there is one folder(Sub folder this consists of some other files)
+
+            --> Creation of a package  
+
+              package packageName;
+
+
                          
                   
 
