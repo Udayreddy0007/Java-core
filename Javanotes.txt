@@ -763,9 +763,47 @@ syntax : abstract class classname    // abstract class
 
             --> Creation of a package  
 
-              package packageName;
+              package packageName; 
+
+              to access 
+     
+     ---> Date: 13/10/26
 
 
+
+     ---> Date : 15 /10/26 
+      
+       
+       ---> Pacakge -- it is a folder which consisits of files
+
+           we building application  school management application
+                                     |
+                                      | -- student data  students  homeworks -- files -- ravi , yasmeen
+                                      | -- teachers data pacakge teachers -- notes -- files
+                                      import student.Ravi
+                                      import student.yasmeen 
+                                      import student.*
+            
+
+            ---> import java.lang.*
+            --> import.lang.system
+
+
+--> Exception handling : 
+   
+   Exception it is an event that occurs during the program execution and interrupts the normal flow
+     of the program
+     -- to handle the runtime errors we use exceptional handling
+   
+   try {
+
+   }
+   catch{
+
+   }
+
+
+     
                          
                   
 
