@@ -803,9 +803,74 @@ syntax : abstract class classname    // abstract class
    }
 
 
-     
+---> Date  : 17/10/26
+
+     ---> Multiple catch: it will manage / catch multiple exception in a single programs
+
+      
+
+      syntax : 
+             
+
+             try {
+
+             }
+             catch{
+
+             }
+             catch{
+
+             }
+
+---> Finally keyword : it cleanup the code such as closing files or releasing the resources 
+                      we call it as finally block
+
+      -- it should not care whether the code is throwing an exception or not
+
+      syntax: 
+        
+
+           finally{
+
+           }
                          
-                  
+
+
+---> Throw and Throws : 
+  
+
+   Throw:
+ 
+      --> Throwing an exception ( expicitly throwing an Exception)
+
+
+  Throws : Decalre a possible exception in method signature (used in the method decalration)
+
+--> Custom exception : programmer is creating his own Exception
+
+   syntax : 
+      
+    class custom exception name extends exception 
+      {
+            custom exception name (String msg)
+            super(msg)
+      }
+
+
+  
+   --->   Checked vs Unchecked Exception 
+ 
+     ---> Checked by compiler    --->required to be handeld by compiler
+
+    ---> Must be caught or declared    catching or declaring is optional
+
+    --> example :                     --->
+
+        
+        Exception IO                        NullPointerException
+   
+
+       
 
 
 
