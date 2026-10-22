@@ -870,19 +870,77 @@ syntax : abstract class classname    // abstract class
         Exception IO                        NullPointerException
    
 
-       
+
+
+--> Date : 22/10/26
+
+----> Collection list:
+
+            
+            --- For example :
+                  
+                  Managing  a class room with student name
+
+            ---> inside an array we are storing the students names
+
+            --> there are 2 students -- Ravi , Naveen -- String stdNames ={"Ravi","Naveen"};
+
+                 ---> length is 2 -- full attendance
+                 ---> Later other two memebers join the session  - half day
+
+                 ---> One more array and copying the details of the Person
+
+      ----> Collection is a system managing the cls rooms records .A list  is an ordered student register 
+              that may contains dupicate names as well
+
+
+              ---> Java provides collections such as ArrayList , and linked list
+
+
+      ---> Collection list frame work : 
+         
+
+            --->A java collection framework is a set of interfaces and classes used to store and mange groups of objects
+
+            Types --
+             
+             List - Array , linked  -- ordered elements and duplicates allowed
+             Set - Hash set  -- Stores unique elements
+             Map -- Hash Map - Store key-value pairs
+
+
+    ---> List : Is an interface in java that represents an ordered sequence  
+
+          Index    Students       
+            0        Ravi
+
+            1        Naveen
+            
+            2         Uday   
+
+            3         Yegneswar
 
 
 
+    ----> ordered  : elements  have position 
+
+    ----> Index : the frst element is at index 0
+
+    ----> Duplicate :  A name may appears twice
 
 
+---> Array list -- is a resizsble list implementation  , it grows  as we elements are added to the array 
+     can shrink when the elements are removed
 
 
+    --> important methods 
 
-
-
-
-
+     add() -- adds the element in the List
+     get() -- retrives an element by passing the index 
+     set() -- replaces an element (index,name)
+     remove() -- remove the element by passing the index values
+     size() -- returns the no.of elements 
+     contains () -- checks weather an element exists or not just by passing the element value
 
 
 
