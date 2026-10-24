@@ -945,9 +945,123 @@ syntax : abstract class classname    // abstract class
 
 
 
+----> Date : 24/10/26
+
+
+  ---> Generics , function interfaces-lambda expression , Stream Api's  , Date and Time Api's
 
 
 
+  -----> Generics  :  It allows us to write class, interfaces and methods that works with the 
+                      different data types while maintining the type saftey  
+                       
+   ----> It allows us to work with the types of data a class or a collection stores
+
+
+           ex :< We have to define the type of data >(use data types wrraper class name-for int-Integer , string-String , double-Double)
+
+                   ArrayList<Integer> list = new ArrayList<>();
+
+                   The above list stores only the integer data 
+
+
+   ----> function - interface : 
+        
+             for example -- 
+
+             Normal interface - ATM -- withdraw , desposit , check balance ---3 methods / 3 operations 
+
+
+             Function - ineterface - Calculator - addtion  , subtracting , multiplication
+
+
+
+   ---> Functional interface -- it is an interface it can also contains default and static method 
+                                 those do not count as additional abstract method 
+
+          -- it has only ine method - abstract method
+          -- can be implemented using the lambda expresssions 
+          -- Suitable for representing the one operations or behaviour
+          -- example is calculator 
+
+      --- to show the differenc between the normal and functional interface we are using annotations
+
+          for functional interface the annotation is @FunctionalInterface
+
+
+
+
+----> Lambda expressions : 
+     
+       ---> A lambda expression is a way to implement the functional interface without creating a separate class or
+             method for that implementation
+
+
+         --- Using lambda expression  
+             (int a , int b) -- parameters 
+             ()---no parameters  
+             -> -- Separating the parameters from the implementations
+
+
+
+
+   ----> Stream API's --- 
+        
+        --- Stream Api's introduced in java 8 , it will allow us to  process the data from the collections 
+           using the operations such as filtering , transforming  , counting  
+
+
+        --- A stream does not  store data itself . it only process data 
+            from the source  , such as a list
+
+
+          --> Stream() creates a stream from the list
+          
+             foreach() -- perform an action on each element / item in stream
+           
+              num -> System.out.println(num) is a lambda expression
+                 num is just a variable name which represent each element in the list
+           
+             -> seperates the variable from the condition
+
+
+      ---> Filtering :  Selects the matching elements 
+
+         ex :   Source --[1,2,3,4,5,6,7,8,,9,10](list) 
+
+                  filter 
+                  
+                  keeping the numbers where num % 2 == 0 ;
+
+                  output 
+
+                  2,4,6,8,10
+
+
+   ---> transforming -- transforms the elements 
+                
+                map(n->n*2)--> transform the elements with multiplying the the elements  with 2 
+
+
+  ---> Counting : it will count the elements inside the stream
+         
+         count() return type is count 
+
+
+         refer stream for the code 
+
+
+
+
+
+
+
+
+
+
+
+
+      
 
 
       
