@@ -1051,6 +1051,58 @@ syntax : abstract class classname    // abstract class
          refer stream for the code 
 
 
+----> Date : 27/10/26
+
+  --> Date and Time API : 
+    
+        -- java.time package aloow us to work with the dates , times , durations and timezones
+
+          
+      --- this modern Date and Time is introduced in java 8th 
+
+       --LocalDate - date only 
+       -- LocalTime - time only 
+       -- LocalDateTime - Both date and time 
+       -- DateTimeFormatter - formates the date and times
+
+ 
+   ---> Dispaly Current date and time
+
+      LocalDate.now() -- will give us current date 
+      LocalTime.now() -- Will give us current time 
+      LocalDateTime.now() -- will give us Current date and Current Time
+
+
+
+     ---> Get the date after 10 days 
+
+          LocalDate.now() - to get the current date 
+
+            current(variable belongs to current date)
+
+            current.plusDays(pass long data values)(10) -- adding 10 days to the current day 
+
+      --> DateTimeFormatter.ofPattern("pass the pattern in which way that you want to see your date") 
+
+            ("MM-dd-yyyy")  ("dd-MM-yyyy")  ("yyyy-MM-dd")
+
+       --> current.formate(variablename of the DateTimeFormatter) -- it will formate the current date as well
+
+
+
+--> Methods of date and time API 
+ 
+   --  now() - current date
+   --  plusDays()  - adds the no of days
+   --  minusDays() - substract the no of days
+   --  getYear()  - gets the year
+   --  formate()  - formats the date or time
+   -- getMonth() - gives the month name
+   -- getMonthValue - gives the value of the month 
+
+
+
+
 
 
 
