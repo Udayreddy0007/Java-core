@@ -1102,6 +1102,44 @@ syntax : abstract class classname    // abstract class
 
 
 
+   ----> Date : 29/10/28
+
+      
+      ---> Multithreding :  executing multiple processes concurrently to perform multiple task 
+
+            concurrently : 
+
+                     ex-1: -- one is he / she listening to the class 
+                                   -- he/she in the background chatting with his friend 
+                           
+                           parallesim - execution multiple proccesses within the thread to achieve multiple task completion 
+
+                    ex-2 -- he/she is listening to the class  - j1
+                           -- he / she is cooking   - j2
+
+                             multiple processes runs at the same time to achieve multiple task
+            
+        
+           -- thread : execution path 
+                -- thread shares the shared process memory  
+                -- light weight
+
+           -- process :  completion of particular process from start to completion
+                        
+                        -- heavy weight
+        
+----> Thread creation in java programming  : 
+      
+      1. By extending the thread class 
+      2. By implementing the Runnablethread interface 
+       
+
+ 
+    1. By extending the thread class we are  creating the thread 
+                         
+
+
+
 
 
 
