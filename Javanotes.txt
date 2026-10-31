@@ -1136,6 +1136,63 @@ syntax : abstract class classname    // abstract class
 
  
     1. By extending the thread class we are  creating the thread 
+
+---> Date : 31/10/26 
+
+   2 . Created a thread by implementing the Runnable interface 
+
+          here few thing we have to remember 
+
+   -- while creating a thread inside a program 
+
+      we have to use this methods only 
+
+       -- run() : contains the actual task should execute 
+       -- start() :  which will call the actual task (run()) internally 
+              to complete the execution 
+
+       -- join() : I will makes the main thread wait until the other thread finishes the job
+
+      
+---> File Handling in java 
+ 
+     ---> File Handling in java means creating , reading , writing and managing the files using java 
+
+ 
+    ex : 
+        
+        A program can save Student details in a file so info remains avaiable after the program ends 
+
+    
+     ---> Important classes 
+        
+         -- file : represents a file or directory 
+         -- filewriter : write text into the file 
+         -- filereader : reads the text from the given file 
+         -- BufferReader : reads the text efficiently including line by line
+
+
+
+  ---> Write data into a file  student details 
+     
+      --- FileWriter = it will allow to write and select the file 
+      --- write = it will allow us to write the text insid  the File
+      --- close = it will close once the file is written 
+       -- IOExceptions = filewriter may throw an IOExection 
+        
+
+  ---> Read the data from the file  
+    
+       -- filereader = opens the file for reading 
+       -- BufferReader = reads the text efficiently including line by line
+       -- readline () = reads one line from line
+       -- while() = Repeats until the end to the file 
+       -- null = indicates there are no more lines 
+       -- close = closes the file  resources 
+       -- line = is used to represent the line
+    
+    
+
                          
 
 
